@@ -1,13 +1,11 @@
 #include <stdio.h>
 /**
- *main - Hello, puts
- *return: the puts message
+ * main - Entry point of the program using puts
+ *
+ * Return: 0 on successful execution
  */
 int main(void)
 {
-	/**
-	 *return: 0 means ok
-	 */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
