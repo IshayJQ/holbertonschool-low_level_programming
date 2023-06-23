@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point of the program prints the alphabet, in lowercase
+ * print_alphabet - prints the alphabet, in lowercase
  *
  * Return: 0 on successful execution
  */
@@ -10,9 +10,8 @@ void print_alphabet(void)
 
 	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
-		putchar(ch);
+		_putchar(ch);
 	}
-	printf("\n");
-	return (0);
+	_putchar('\n');
 }
 
