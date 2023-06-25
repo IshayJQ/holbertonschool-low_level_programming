@@ -4,7 +4,7 @@
  *
  * Return: no return
  */
- 
+
 void jack_bauer(void)
 {
 	int h1, h2, m1, m2;
