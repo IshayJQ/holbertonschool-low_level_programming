@@ -15,7 +15,10 @@ void print_to_98(int n)
 		for (tem = n ; tem <= 98 ; tem++)
 		{
 			if (tem == 98)
+			{
 				printf("%d ", tem);
+				printf("\n");
+			}
 			else
 				printf("%d, ", tem);
 		}
@@ -25,7 +28,10 @@ void print_to_98(int n)
 		for (tem = n ; tem >= 98 ; tem--)
 		{
 			if (tem == 98)
+			{
 				printf("%d ", tem);
+				printf("\n");
+			}
 			else
 				printf("%d, ", tem);
 		}
