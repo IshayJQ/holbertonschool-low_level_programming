@@ -7,20 +7,20 @@
 
 void print_to_98(int n)
 {
-	int a, temp;
+	int a, tem;
 
 	if (n <= 98)
 	{
-		for (temp = n ; temp <= 98; temp++)
+		for (tem = n ; tem <= 98 ; tem++)
 			_putchar(temp + 48);
-			_putchat(44);
+			_putchar(44);
 			_putchar(32);
 	}
 	else
 	{
-		for (temp = n ; temp >= 98 ; temp--)
-			_putchar(temp + 48);
-			_putchat(44);
+		for (tem = n ; tem >= 98 ; tem--)
+			_putchar(tem + 48);
+			_putchar(44);
 			_putchar(32);
 	}
 }
