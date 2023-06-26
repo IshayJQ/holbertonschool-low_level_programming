@@ -12,15 +12,19 @@ void print_to_98(int n)
 	if (n <= 98)
 	{
 		for (tem = n ; tem <= 98 ; tem++)
+		{
 			_putchar(tem + 48);
 			_putchar(44);
 			_putchar(32);
+		}
 	}
 	else
 	{
 		for (tem = n ; tem >= 98 ; tem--)
+		{
 			_putchar(tem + 48);
 			_putchar(44);
 			_putchar(32);
+		}
 	}
 }
