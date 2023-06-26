@@ -13,11 +13,21 @@ void print_to_98(int n)
 	if (n <= 98)
 	{
 		for (tem = n ; tem <= 98 ; tem++)
-			printf("%d, ", tem);
+		{
+			if (tem == 98)
+				printf("%d", tem);
+			else
+				printf("%d, ", tem);
+		}
 	}
 	else
 	{
 		for (tem = n ; tem >= 98 ; tem--)
-			printf("%d, ", tem);
+		{
+			if (tem == 98)
+				printf("%d", tem);
+			else
+				printf("%d, ", tem);
+		}
 	}
 }
