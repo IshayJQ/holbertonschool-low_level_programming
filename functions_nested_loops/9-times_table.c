@@ -30,6 +30,13 @@ void times_table(void)
 				_putchar(32);
 				_putchar(result + 48);
 			}
+			else
+			{
+				_putchar(result + 48);
+				_putchar(44);
+				_putchar(32);
+				_putchar(32);
+			}
 		}
 		_putchar('\n');
 	}
