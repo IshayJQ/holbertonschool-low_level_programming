@@ -9,7 +9,7 @@ void more_numbers(void)
 {
 	int cont, num;
 
-	for (cont = 1 ; cont <= 10 ; cont++ )
+	for (cont = 1 ; cont <= 10 ; cont++)
 	{
 		for (num = 0 ; num <= 14 ; num++)
 		{
@@ -20,5 +20,5 @@ void more_numbers(void)
 			_putchar((num % 10) + 48);
 		}
 		_putchar('\n');
-	}  
+	}
 }
