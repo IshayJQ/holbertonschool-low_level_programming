@@ -2,10 +2,10 @@
 /**
  * main - Entry point of the program using puts
  *
- * Return: not return
+ * Return: 0 on successful execution
  */
 
-void main(void)
+int main(void)
 {
 	int num;
 
@@ -20,4 +20,6 @@ void main(void)
 		else
 			printf("%d ", num);
 	}
+	printf("\n");
+	return (0);
 }
