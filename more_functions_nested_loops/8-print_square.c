@@ -9,7 +9,7 @@ void print_square(int size)
 {
 	int ancho, altura;
 	
-	if (size <= 0)
+	if (size > 0)
 	{
 		for (altura = 1 ; altura <= size ; altura++)
 		{
@@ -17,6 +17,7 @@ void print_square(int size)
 				_putchar(35);
 			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
