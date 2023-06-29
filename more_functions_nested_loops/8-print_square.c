@@ -8,11 +8,15 @@
 void print_square(int size)
 {
 	int ancho, altura;
-
-	for (altura = 1 ; altura <= size ; altura++)
+	
+	if (size <= 0)
 	{
-		for (ancho = 1 ; ancho <= size ; ancho++)
-			_putchar(35);
+		for (altura = 1 ; altura <= size ; altura++)
+		{
+			for (ancho = 1 ; ancho <= size ; ancho++)
+				_putchar(35);
+			_putchar('\n');
+		}
 		_putchar('\n');
 	}
 }
