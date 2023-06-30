@@ -10,7 +10,7 @@ void print_triangle(int size)
 	int brick, space, piso;
 
 	if (size <= 0)
-		putchar('\n');
+		_putchar('\n');
 	else
 	{
 		for (piso = 1 ; piso <= size ; piso++)
@@ -19,18 +19,18 @@ void print_triangle(int size)
 			space = size - piso;
 			while (space > 0)
 			{
-				putchar(32);
+				_putchar(32);
 				space--;
 			}
 			if (space == 0)
 			{
 				while (brick > 0)
 				{
-					putchar(35);
+					_putchar(35);
 					brick--;
 				}
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
