@@ -9,7 +9,9 @@ void print_rev(char *s)
 {
 	int length, box;
 
-	for (length = 0 ; s[length] != '\0' ; length++);
+	for (length = 0 ; s[length] != '\0' ; length++)
+	{
+	}
 	for (box = length - 1 ; box >= 0 ; box--)
 		_putchar(s[box]);
 	_putchar('\n');
