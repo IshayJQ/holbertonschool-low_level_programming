@@ -10,5 +10,6 @@ void _puts(char *str)
 	int box;
 
 	for (box = 0 ; str[box] ; box++)
-		putchar(str[box]);
+		_putchar(str[box]);
+	_putchar('\n');
 }
