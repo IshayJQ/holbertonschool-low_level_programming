@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * swap_int - prints a trianle
+ * swap_int - swaps the values of two integers
  * @a: pointer to integer
  * @b: pointer to integer
  * Return: not return
