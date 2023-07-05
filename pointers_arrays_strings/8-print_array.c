@@ -14,7 +14,7 @@ void print_array(int *a, int n)
 
 	while (cont <= n)
 	{
-		if (cont == 0)
+		if (cont == 1)
 			printf("%d", *a);
 		else
 		if (cont != n)
