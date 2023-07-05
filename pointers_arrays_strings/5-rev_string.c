@@ -8,30 +8,23 @@
 
 void rev_string(char *s)
 {
-	int length, box;
+	int length, mitad;
+	int cont = 1;
+	char *final = s;
+	char temp1, temp2;
 
-	for (length = 1 ; *s != '\0' ; s++)
+	for (length = 1 ; *final != '\0' ; final++)
 		length++;
-
-	char temp[length];
-
-	s--;
-
-	for (box = 0 ; box < length - 1 ; box++)
+	mitad = length / 2;
+	final--;
+	while (cont <= mitad - 1)
 	{
-		temp[box] = *s;
-		/*printf("%c", temp[box]);*/
-		s--;
-	}
-	s++;
-	if (box == length - 1)
-		temp[box] = '\0';
-	/*printf("\n");*/
-	/*printf("%s", temp);*/
-	for (box = 0 ; *s != '\0' ; box++)
-	{
-		*s = temp[box];
+		temp1 = *s;
+		temp2 = *final;
+		*s = temp2;
+		*final = temp1;
 		s++;
+		final--;
+		cont++;
 	}
-	_putchar('\n');
 }
