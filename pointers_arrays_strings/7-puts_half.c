@@ -12,28 +12,14 @@ void puts_half(char *str)
 
 	for (length = 1 ; *str != '\0' ; str++)
 		length++;
-	if (length % 2 != 0)
+	n = (length - 1) / 2;
+	for (cont = 1 ; cont <= n ; cont++)
+		str--;
+	while (*str != '\0')
 	{
-	/*	n = (length_of_the_string - 1) / 2;*/
-		n = (length - 1) / 2;
-		for (cont = 1 ; cont <= n ; cont++)
-			str--;
-		while (*str != '\0')
-		{
-			_putchar(*str);
-			str++;
-		}
+		_putchar(*str);
+		str++;
 	}
-	else
-	{
-		n = (length - 1)/ 2;
-		for (cont = 1 ; cont <= n ; cont++)
-			str--;
-		while (*str != '\0')
-		{
-			_putchar(*str);
-			str++;
-		}
-	}
+	
 	_putchar('\n');
 }
