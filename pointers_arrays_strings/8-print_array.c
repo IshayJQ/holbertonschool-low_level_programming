@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 		if (cont == 1)
 			printf("%d", *a);
 		else
-			printf(", %d", *a);
+			printf(", %d ", *a);
 		if (cont != n)
 		a++;
 		cont++;
