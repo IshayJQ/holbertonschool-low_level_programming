@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * print_rev - prints a string in reverse
+ * rev_string - prints a string in reverse
  * @s: string pointer to char
  * Return: not return
  */
@@ -11,22 +12,26 @@ void rev_string(char *s)
 
 	for (length = 1 ; *s != '\0' ; s++)
 		length++;
+
 	char temp[length];
+
 	s--;
-	for (box = 0 ; box < length-1 ;box++)
+
+	for (box = 0 ; box < length - 1 ; box++)
 	{
 		temp[box] = *s;
-		printf("%c", temp[box]);
+		/*printf("%c", temp[box]);*/
 		s--;
 	}
 	s++;
-	if (box == length-1)
+	if (box == length - 1)
 		temp[box] = '\0';
-	printf("\n");
-	printf("%s", temp);
+	/*printf("\n");*/
+	/*printf("%s", temp);*/
 	for (box = 0 ; *s != '\0' ; box++)
 	{
 		*s = temp[box];
 		s++;
 	}
+	_putchar('\n');
 }
