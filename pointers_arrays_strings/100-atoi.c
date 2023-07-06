@@ -16,7 +16,7 @@ int _atoi(char *s)
 	{
 		if (s[i] == 45)
 		{
-			sign = -1;
+			sign = sign * -1;
 			i++;
 		}
 		else if (s[i] == 43)
@@ -30,6 +30,8 @@ int _atoi(char *s)
 		}
 		else
 			i++;
+		if (s[i] == '\0')
+			break;
 	}
 	if (result == 0)
 		return (result);
