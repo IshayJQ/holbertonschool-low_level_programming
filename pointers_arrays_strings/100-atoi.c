@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int result = 0;
-	int sign = 1;
+	int sign = -1;
 	int i = 0;
 
 	while (s[i] != '\0')
@@ -25,7 +25,7 @@ int _atoi(char *s)
 			i++;
 		else if (s[i] >= 48 && s[i] <= 57)
 		{
-			result = result * 10 + (s[i] - 48);
+			result = result * 10 - (s[i] - 48);
 			i++;
 		}
 		else
