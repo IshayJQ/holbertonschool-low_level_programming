@@ -19,7 +19,5 @@ char *_strcpy(char *dest, char *src)
 	}
 	*dest = *src;
 	dest = p;
-	printf("%s", dest);
-	printf("%c", dest[0]);
 	return (dest);
 }
