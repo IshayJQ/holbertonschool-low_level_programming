@@ -12,20 +12,20 @@ int _atoi(char *s)
 	int sign = 1;
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (str[i] == 45)
+		if (s[i] == 45)
 		{
 			sign = -1;
 			i++;
 		}
-		else if (str[i] == 43)
+		else if (s[i] == 43)
 			i++;
-		else if (str[i] == 32)
+		else if (s[i] == 32)
 			i++;
-		else if (str[i] >= 48 && str[i] <= 57)
+		else if (s[i] >= 48 && s[i] <= 57)
 		{
-			result = result * 10 + (str[i] - 48);
+			result = result * 10 + (s[i] - 48);
 			i++;
 		}
 		else
