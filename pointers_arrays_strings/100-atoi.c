@@ -30,7 +30,7 @@ int _atoi(char *s)
 		}
 		else
 			i++;
-		if (s[i] == '\0')
+		if (s[i] == 36)
 			break;
 	}
 	if (result == 0)
