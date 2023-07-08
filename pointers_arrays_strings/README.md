@@ -9,3 +9,11 @@
 8. Arrays are not pointers
 9. strcpy
 10. Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers
+0. strcat
+1. strncat
+2. strncpy
+3. strcmp
+4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy
+5. Always look up
+6. Expect the best. Prepare for the worst. Capitalize on what comes
+7. Mozart composed his music not for the elite, but for everybody
