@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 
 /**
  * cap_string - capitalizes all words
@@ -21,7 +21,7 @@ char *cap_string(char *p)
 
 	while (*p != '\0')
 	{
-		if (*p == '\n' || *p == '\t' || *p <= 96)
+		if (*p == '\n' || *p == '\t' || *p <= 64)
 		{
 			p++;
 			if (*p <= 122 && *p >= 97)
