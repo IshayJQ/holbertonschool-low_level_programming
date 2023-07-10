@@ -4,17 +4,14 @@
  * _strcmp - compares two strings
  * @s1: pointer to character
  * @s2: pointer to character
- * Return: number if is equal
+ * Return: if the character are differents return the subtraction number ASCII
  */
 int _strcmp(char *s1, char *s2)
 {
-	int length1, length2;
-
-	for (length1 = 0 ; s1[length1] != '\0' ; length1++)
+	while (*str1 == *str2 && *str1 != '\0' && *str2 != '\0')
 	{
+		str1++;
+		str2++;
 	}
-	for (length2 = 0 ; s2[length2] != '\0' ; length2++)
-	{
-	}
-	return (length1 - length2);
+	return *str1 - *str2;
 }
