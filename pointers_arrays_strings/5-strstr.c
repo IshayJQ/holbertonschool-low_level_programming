@@ -9,7 +9,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *h, n;
+	char *h, *n;
 
 	h = haystack;
 	n = needle;
