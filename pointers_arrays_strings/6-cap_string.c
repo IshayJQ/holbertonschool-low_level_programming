@@ -21,7 +21,7 @@ char *cap_string(char *p)
 
 	while (*p != '\0')
 	{
-		if (*p == '\n' || *p == '\t')
+		if (*p == '\n' || *p == '\t' || *p == 46)
 		{
 			p++;
 			if (*p <= 122 && *p >= 97)
