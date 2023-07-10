@@ -14,17 +14,17 @@ char *cap_string(char *p)
 
 	while (*p != '\0')
 	{
-		if (*p == 32 || *p == '\n' || *p == '\t')
-		{
-			p++;
-			if (*p <= 122 && *p >= 97)
+			if (*p == 32 || *p == '\n' || *p == '\t' || (p[0] <= 122 && p[0] >= 97))
 			{
-				change = *p - 97;
-				*p = 65 + change;
+				p++;
+				if (*p <= 122 && *p >= 97)
+				{
+					change = *p - 97;
+					*p = 65 + change;
+				}
 			}
-		}
-		if (*p != '\0')
-			p++;
+			else if (*p != '\0')
+				p++;
 	}
 	p = start;
 	return (p);
