@@ -10,14 +10,30 @@
 
 void print_diagsums(int *a, int size)
 {
-	int sum1, sum2, cont;
+	int diag1, diag2, cont, jumps;
 
-	sum1 = 0;
-	sum1 = 0;
+	diag1 = *a;
+	diag2 = 0;
 
+	for (cont = 0 ; cont < size-1 ; cont++)
+	{
+		jumps = 1;
+		while (jumps <= size+1)
+		{
+			a++;
+			jumps++;
+		}
+		diag1 = diag1 + *a;
+	}
 	for (cont = 0 ; cont < size ; cont++)
-		sum1 = sum1 + a[cont * size + cont];
-	for (cont = size - 1 ; cont >= 0 ; cont--)
-		sum2 = sum2 + a[cont * size + (size - cont - 1)];
-	printf("%d, %d\n", sum1, sum2);
+	{
+		jumps = 1;
+		while (jumps <= size-1)
+		{
+			a--;
+			jumps++;
+		}
+		diag2 = diag2 + *a;
+	}
+	printf("%d, %d\n", diag1, diag2);
 }
