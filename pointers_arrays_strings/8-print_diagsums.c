@@ -15,10 +15,10 @@ void print_diagsums(int *a, int size)
 	diag1 = *a;
 	diag2 = 0;
 
-	for (cont = 0 ; cont < size-1 ; cont++)
+	for (cont = 0 ; cont < size - 1 ; cont++)
 	{
 		jumps = 1;
-		while (jumps <= size+1)
+		while (jumps <= size + 1)
 		{
 			a++;
 			jumps++;
@@ -28,7 +28,7 @@ void print_diagsums(int *a, int size)
 	for (cont = 0 ; cont < size ; cont++)
 	{
 		jumps = 1;
-		while (jumps <= size-1)
+		while (jumps <= size - 1)
 		{
 			a--;
 			jumps++;
