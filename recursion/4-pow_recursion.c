@@ -3,7 +3,7 @@
 /**
  * _pow_recursion - value of x raised to the power of y
  * @x: numer raised to the power of y
- * @y:
+ * @y: raised number power
  * Return: the result of the raised number
  */
 
@@ -14,5 +14,5 @@ int _pow_recursion(int x, int y)
 	if (y < 0)
 		return (-1);
 	else
-		return (x * factorial(x, y - 1));
+		return (x * _pow_recursion(x, y - 1));
 }
