@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
  * Return: 1 if is a digit or 0 if otherwise
  */
 
-int _isdigit(int c)
+int _isdigit(char c)
 {
 	if (c >= 48 && c <= 57)
 	{
