@@ -8,7 +8,7 @@
  * Return: 0 always mean success 1 if not receive two arguments
  */
 
-int main(int argc, char *argv[])
+iint main(int argc, char *argv[])
 {
 	int i, mul;
 
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			printf("%s\n", argv[i]);
-			mul = mul * atoi(argv[i]);
+			mul = mul * _atoi(argv[i]);
 		}
 		printf("%d\n", mul);
 	}
