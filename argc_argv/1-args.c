@@ -10,7 +10,6 @@
 
 int main(int argc, char *argv[]__attribute__((unused)))
 {
-	if (argc > 1)
-		printf("%d", argc);
+	printf("%d", argc);
 	return (0);
 }
