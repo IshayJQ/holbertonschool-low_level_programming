@@ -8,7 +8,7 @@
  * Return: 0 always mean success 1 if not receive two arguments
  */
 
-iint main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i, mul;
 
