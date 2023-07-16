@@ -41,15 +41,21 @@ int main(int argc, char *argv[])
 
 int _isdigit(char *c)
 {
-	if (*c >= 48 && *c <= 57)
+	int flag = 0;
+
+	while (*c != '\0')
 	{
-		return (1);
+		if (*c >= 48 && *c <= 57)
+		{
+			flag = 1;
+		}
+		else
+		{
+			return (0);
+		}
+		c++;
 	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
+	return (flag);
 }
 
 /**
