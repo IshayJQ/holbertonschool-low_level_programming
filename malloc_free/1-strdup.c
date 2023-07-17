@@ -5,7 +5,7 @@
 /**
  * _strdup - copy of the string given as a parameter
  * @str: char string
- * Return:  a pointer to a newly allocated space in memory, if str = NULL return NULL
+ * Return: a pointer to a newly allocated space in memory
  */
 
 char *_strdup(char *str)
