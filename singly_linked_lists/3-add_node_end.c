@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node -  adds a new node at the end of a list
+ * add_node_end -  adds a new node at the end of a list
  * @head: addres pointer to the head list struct list_t
  * @str: pointer to string
  * Return: the addres to the head list
@@ -27,8 +27,10 @@ list_t *add_node_end(list_t **head, const char *str)
 		newList->len = strlen(str);
 		if (*head != NULL)
 		{
-			lastList->next = newList;
+			while (lastList->next != NULL)
+				lastList = lastList->next;
 			newList->next = NULL;
+			lastList->next = newList;
 			return (*head);
 		}
 		newList->next = *head;
