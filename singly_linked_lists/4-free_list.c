@@ -4,12 +4,12 @@
 #include "lists.h"
 
 /**
- * _free_list -  frees a lists
+ * free_list -  frees a lists
  * @head: addres pointer to the head list struct list_t
  * Return: the addres to the head list
  */
 
-void _free_list(list_t *head)
+void free_list(list_t *head)
 {
 	list_t *freeNext;
 
