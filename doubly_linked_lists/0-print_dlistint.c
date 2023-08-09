@@ -12,7 +12,6 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t length = 0;
-	unsigned int i;
 
 	while (h != NULL)
 	{
