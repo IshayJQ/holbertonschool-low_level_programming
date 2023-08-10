@@ -6,6 +6,7 @@
 /**
  * get_dnodeint_at_index -  get node by the index
  * @head: addres pointer to the head list struct list_t
+ * @index: the number node
  * Return: the addres of the node
  */
 
