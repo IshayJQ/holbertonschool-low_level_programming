@@ -24,10 +24,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		newList = NULL;
 	else
 	{
-		if (*h == NULL || idx - cont == 0)
+		if (*h == NULL || res == 0)
 		{
 			newList = add_dnodeint_end(&listNode, n);
-			*h = newList;
+			*h = listNode;
 			return (newList);
 		}
 		else if (idx == 0)

@@ -31,7 +31,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 			newList->prev = prevList;
 			newList->next = NULL;
 			prevList->next = newList;
-			return (*head);
+			return (newList);
 		}
 		newList->next = *head;
 		newList->prev = prevList;
