@@ -43,7 +43,7 @@ typedef struct skiplist_s
 	int n;               /* Integer stored at the node. */
 	size_t index;        /* Index of the node in the list. */
 	struct skiplist_s *next;    /* Pointer to the next node. */
-	struct skiplist_s *express; /* Pointer to the next node in the express lane. */
+	struct skiplist_s *express;
 } skiplist_t;
 
 int linear_search(int *array, size_t size, int value);
